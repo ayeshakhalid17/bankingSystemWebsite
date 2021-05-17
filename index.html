@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Banking System</title>
+</head>
+
+<body>
+    <img class="bg-img" src="bg.jpg">
+    <div class=container>
+        <h1>Banking System</h1>
+        <h3>This is a simple yet dynamic website using which you can view details of all customers as well as you can
+            transfer money from one account to another.</h3>
+        <br>
+        <a class="btn" id="link">View All Customers</a>
+    </div>
+</body>
+<script>
+    let link = document.getElementById("link");
+    link.addEventListener("click", executeScript);
+    function executeScript() {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'customers.php', true);
+        xhr.onload = function () {
+            link.href=this.responseURL;
+            link.click();
+        }
+        xhr.send();
+    }
+
+</script>
+
+</html>
