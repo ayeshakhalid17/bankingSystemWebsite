@@ -39,12 +39,12 @@
             ?>
                 <tr>
                     <td><a href="ind_customer.php?
-                    name=<?php echo$rows['name'];?>
+                    c_name=<?php echo$rows['c_name'];?>
                     &acc_no=<?php echo $rows['acc_no'];?>
                     &email=<?php echo $rows['email'];?>
                     &telephone=<?php echo $rows['telephone'];?>
                     &curr_balance=<?php echo $rows['curr_balance'];?>
-                    "><?php echo $rows['name'];?></a></td>
+                    "><?php echo $rows['c_name'];?></a></td>
                     <td><?php echo $rows['acc_no'];?></td>
                     <td><?php echo $rows['email'];?></td>
                     <td><?php echo $rows['telephone'];?></td>
