@@ -38,7 +38,7 @@
             text-decoration: none;
             text-align: center;
             transition: all 0.2s;
-            margin:7px 0;
+            margin:13px 0;
             margin-bottom: 20px;
             width: 12em;
             height: 70px;
