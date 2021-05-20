@@ -33,7 +33,7 @@
             if(!$conn){
                 die("Connection error:".mysqli_connect_error());
             }
-            $q="SELECT * FROM `banking_system`.`customers`";
+            $q="SELECT * FROM `banking_system`.`customers` ORDER BY c_name";
             $result=mysqli_query($conn,$q);
             while($rows=mysqli_fetch_assoc($result)){
             ?>
