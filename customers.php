@@ -9,6 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color:rgba(221, 172, 98,0.7);
+            font-family: 'Noto Serif JP',sans-serif;
+            font-weight: 800;
+        }
+        .heading{
+            background-color: rgb(28, 57, 78);
+            color:rgba(221, 172, 98,0.7);
+            margin:0;
+            padding-bottom:10px;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(21, 21, 109);
+        }
+        table{
+            margin-top:30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div class="heading">
